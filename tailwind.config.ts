@@ -12,7 +12,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#AE450A",
-        secondary: "2E200C",
+        secondary: "#2E200C",
       },
     },
   },
