@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <header className="w-full bg-transparent backdrop-blur-sm z-50 fixed">
       <nav className="flex justify-between items-center px-10 py-4">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center text-white">
           <Mountain size={20} />
           <span className="font-semibold">ETHIO EXPLORE</span>
         </div>
