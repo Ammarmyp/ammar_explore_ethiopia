@@ -11,7 +11,7 @@ const TeamsSection = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateX = useTransform(cardScroll, [0, 1], [-100, 100]);
+  const translateX = useTransform(cardScroll, [0, 1], [80, -80]);
   return (
     <div
       className="flex flex-col items-center justify-center px-8 md:px-14 lg:px-[140px] py-6 md:py-[60px] w-full"

@@ -17,7 +17,7 @@ const CoreTeams = () => {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const translateX = useTransform(cardScroll, [0, 1], [-100, 100]);
+  const translateX = useTransform(cardScroll, [0, 1], [-80, 80]);
 
   return (
     <div
