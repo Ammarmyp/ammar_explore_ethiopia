@@ -6,6 +6,7 @@ import OurServiceCard from "@/components/custom/OurServiceCard";
 import OurService from "./layout/Ourservice";
 import LocationSection from "./layout/LocationsSection";
 import TeamsSection from "./layout/TeamsSection";
+import CEOnoteSection from "./layout/CEOnoteSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <LocationSection />
       <OurService />
       <TeamsSection />
+      <CEOnoteSection />
       <Banner
         image={"coffe.jpg"}
         heading={`"Unlock Incredible Savings – and lets discuss your Adventure!"`}
