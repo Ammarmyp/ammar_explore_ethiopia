@@ -5,8 +5,8 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className=" bg-secondary  text-white ">
-      <div className="mx-auto w-full max-w-screen-xl px-4 md:px-8 lg:p-[160px] py-3 md:py-6 lg:py-[60px] ">
-        <div className="md:flex md:justify-between items-center space-x-24">
+      <div className="mx-auto w-full max-w-screen-xl px-8 md:px-10 lg:p-[160px] py-10 md:py-20 lg:py-[60px] ">
+        <div className="flex flex-col lg:flex-row md:justify-between items-start lg:items-center lg:space-x-24">
           <Link
             href={"/"}
             className="mb-6 md:mb-0 flex flex-col justify-between items-start gap-6"
