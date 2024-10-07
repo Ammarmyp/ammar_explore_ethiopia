@@ -12,7 +12,7 @@ const Banner = ({ image, heading, subHeading }: Props) => {
       className="relative bg-no-repeat bg-center bg-cover w-full h-[70vh] md:h-screen text-center"
       style={{ backgroundImage: `url('/assets/${image}')` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-30" />
+      <div className="absolute inset-0 bg-black bg-opacity-45" />
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-white space-y-5 md:space-y-10 px-4 md:px-16">
         {subHeading && (
           <p className="text-white/85 tracking-tighter text-lg md:text-xl ">
