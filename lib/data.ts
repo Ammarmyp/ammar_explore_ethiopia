@@ -35,12 +35,30 @@ export const teamData = [
     id: 2,
     image: "tourGuideImg.jpg",
     name: "Elyas Abate",
-    positionShortDescription: "Logistics manager and GM.",
+    positionShortDescription: "Logistics manager and General Manger.",
   },
   {
     id: 3,
     image: "tourGuideImg.jpg",
     name: "Ammar Mohammed",
-    positionShortDescription: "Finance officer and executive director.",
+    positionShortDescription: "Finance officer and chief executive director.",
+  },
+  {
+    id: 4,
+    image: "tourGuideImg.jpg",
+    name: "Ammar Mohammed",
+    positionShortDescription: "Finance officer and chief executive director.",
+  },
+  {
+    id: 5,
+    image: "tourGuideImg.jpg",
+    name: "Ammar Mohammed",
+    positionShortDescription: "Finance officer and chief executive director.",
+  },
+  {
+    id: 6,
+    image: "tourGuideImg.jpg",
+    name: "Ammar Mohammed",
+    positionShortDescription: "Finance officer and chief executive director.",
   },
 ];

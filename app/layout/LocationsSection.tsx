@@ -16,7 +16,7 @@ import { ArrowRightIcon } from "lucide-react";
 
 const LocationSection = () => {
   return (
-    <div className="mb-[80px]">
+    <div className="mb-[80px] ">
       <div className="relative">
         <Carousel className="w-[90%] max-w-full m-auto pt-10  ">
           <CarouselContent className="-ml-1 gap-2">

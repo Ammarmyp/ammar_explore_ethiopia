@@ -1,15 +1,38 @@
-import React from "react";
+"use client";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
 
 const EssaySection = () => {
+  const ref = useRef(null);
+  const { scrollYProgress: cardScroll } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(cardScroll, [0, 1], [-150, 150]);
+  const translateY2 = useTransform(cardScroll, [0, 1], [100, -100]);
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 py-28 px-6 md:px-10 lg:px-48 w-full">
-      <div className="md:w-1/2 flex justify-center">
+    <div
+      className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 py-28 px-6 md:px-10 lg:px-48 w-full"
+      ref={ref}
+    >
+      <motion.div
+        className="md:w-1/2 flex justify-center"
+        style={{
+          translateY: translateY2,
+        }}
+      >
         <h2 className="text-xl md:text-3xl lg:text-5xl text-secondary font-bold tracking-tighter uppercase">
           We specialize in providing unforgettable experience in Ethiopia from
           Breath talking landscapes to rich cultural heritage.
         </h2>
-      </div>
-      <div className="flex flex-col items-start md:w-1/2 space-y-4 md:space-y-6">
+      </motion.div>
+      <motion.div
+        className="flex flex-col items-start md:w-1/2 space-y-4 md:space-y-6"
+        style={{
+          translateY,
+        }}
+      >
         <h2 className="text-xl md:text-2xl text-secondary font-bold capitalize">
           A Dream Come True All Of Ethiopia In Your Palms
         </h2>
@@ -25,7 +48,7 @@ const EssaySection = () => {
           exploration, or a deep dive into Ethiopia’s hidden gems, we provide a
           seamless and enriching journey from start to finish."
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

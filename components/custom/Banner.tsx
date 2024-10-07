@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
 
 interface Props {
   image: string;
@@ -7,12 +9,28 @@ interface Props {
 }
 
 const Banner = ({ image, heading, subHeading }: Props) => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["end end", "end start"],
+  });
+
+  const borderRadius = useTransform(scrollYProgress, [0, 1], ["0px", "15%"]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+
   return (
-    <div
+    <motion.div
       className="relative bg-no-repeat bg-center bg-cover w-full h-[70vh] md:h-screen text-center"
-      style={{ backgroundImage: `url('/assets/${image}')` }}
+      style={{ backgroundImage: `url('/assets/${image}')`, borderRadius }}
+      ref={targetRef}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-45" />
+      <motion.div
+        className="absolute inset-0 bg-black bg-opacity-55"
+        style={{
+          borderRadius,
+          opacity,
+        }}
+      />
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-white space-y-5 md:space-y-10 px-4 md:px-16">
         {subHeading && (
           <p className="text-white/85 tracking-tighter text-lg md:text-xl ">
@@ -23,7 +41,7 @@ const Banner = ({ image, heading, subHeading }: Props) => {
           {heading}
         </h1>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

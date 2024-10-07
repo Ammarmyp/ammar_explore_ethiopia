@@ -7,6 +7,7 @@ import OurService from "../layout/Ourservice";
 import TeamsSection from "../layout/TeamsSection";
 import AboutPageMotto from "@/app/about/_components/AboutPageMotto";
 import EssaySection from "./_components/EssaySection";
+import CoreTeams from "./_components/CoreTeams";
 
 const AboutPage = () => {
   return (
@@ -18,7 +19,7 @@ const AboutPage = () => {
       />
       <AboutPageMotto />
       <EssaySection />
-      <TeamsSection />
+      <CoreTeams />
       <Banner
         image={"artimage.jpg"}
         heading={`"Journey with Us – Meet the Explorers Who Make Your Adventures Unforgettable!"`}

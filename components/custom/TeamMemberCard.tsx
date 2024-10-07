@@ -21,7 +21,7 @@ interface Props {
 
 const TeamMemberCard = ({ name, image, positions }: Props) => {
   return (
-    <Card className=" !bg-transparent !border-primary/35 rounded-none shadow-none ">
+    <Card className=" !bg-transparent !border-primary/35 hover:shadow-lg hover:-translate-y-2 duration-300 ease-out rounded-none shadow-none ">
       <CardHeader className="flex flex-col items-center justify-center gap-[21px]">
         <Image
           width={100}
