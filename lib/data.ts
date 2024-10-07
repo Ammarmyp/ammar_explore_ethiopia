@@ -23,3 +23,24 @@ export const serviceData = [
       "We provide you the best plan within a short time so that you can focus on exploring more.",
   },
 ];
+
+export const teamData = [
+  {
+    id: 1,
+    image: "tourGuideImg.jpg",
+    name: "Ammar Mohammed",
+    positionShortDescription: "Lead tour guide and communications officer.",
+  },
+  {
+    id: 2,
+    image: "tourGuideImg.jpg",
+    name: "Elyas Abate",
+    positionShortDescription: "Logistics manager and GM.",
+  },
+  {
+    id: 3,
+    image: "tourGuideImg.jpg",
+    name: "Ammar Mohammed",
+    positionShortDescription: "Finance officer and executive director.",
+  },
+];
