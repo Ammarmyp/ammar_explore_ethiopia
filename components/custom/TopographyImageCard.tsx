@@ -10,7 +10,7 @@ const TopographyImageCard = ({ title, image }: Props) => {
   return (
     <Card
       style={{ backgroundImage: `url('/assets/${image}')` }}
-      className={` bg-no-repeat bg-center bg-cover w-[473px] h-[546px] flex items-center justify-center rounded-none border-none flex-shrink-0`}
+      className={` bg-no-repeat bg-center bg-cover w-[473px] h-[546px] flex items-center justify-center rounded-md border-none flex-shrink-0 `}
     >
       <span className="text-center text-white text-xl font-semibold drop-shadow-lg">
         {title}
