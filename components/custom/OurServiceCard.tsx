@@ -1,5 +1,3 @@
-import React from "react";
-import { Card } from "../ui/card";
 import { Ticket } from "lucide-react";
 
 interface Props {

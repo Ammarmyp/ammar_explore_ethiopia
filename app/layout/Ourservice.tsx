@@ -1,6 +1,5 @@
-import React from "react";
 import OurServiceCard from "@/components/custom/OurServiceCard";
-import { data, serviceData } from "@/lib/data";
+import { serviceData } from "@/lib/data";
 
 const OurService = () => {
   return (

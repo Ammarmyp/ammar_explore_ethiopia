@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect, useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -7,12 +6,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Link from "next/link";
 
-import { data } from "@/lib/data";
 import TopographyImageCard from "@/components/custom/TopographyImageCard";
-import { Button } from "@/components/ui/button";
-import { ArrowRightIcon } from "lucide-react";
+import { data } from "@/lib/data";
 
 const LocationSection = () => {
   return (
@@ -20,7 +16,7 @@ const LocationSection = () => {
       <div className="relative">
         <Carousel className="w-[90%] max-w-full m-auto pt-10  ">
           <CarouselContent className="-ml-1 gap-2">
-            {data.map(({ title, image, id }, index) => (
+            {data.map(({ title, image }, index) => (
               <CarouselItem
                 key={index}
                 className="pl-1 md:basis-1/2 lg:basis-1/3 ml-4"

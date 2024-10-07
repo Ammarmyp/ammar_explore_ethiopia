@@ -1,6 +1,6 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 const EssaySection = () => {
   const ref = useRef(null);
@@ -37,16 +37,17 @@ const EssaySection = () => {
           A Dream Come True All Of Ethiopia In Your Palms
         </h2>
         <p className="text-sm md:text-base text-left">
-          "Experience the best of Ethiopia with us. We offer personalized
-          journeys that showcase the country's stunning landscapes and rich
+          &quot;Experience the best of Ethiopia with us. We offer personalized
+          journeys that showcase the country&apos;s stunning landscapes and rich
           cultural heritage. From immersive cultural tours to exploring natural
           wonders, we ensure every trip is unforgettable. Our dedicated team is
           passionate about crafting unique itineraries tailored to your
           interests, giving you an authentic adventure that connects you with
-          Ethiopia’s vibrant history, diverse traditions, and incredible natural
-          beauty. Whether you’re seeking thrilling outdoor experiences, cultural
-          exploration, or a deep dive into Ethiopia’s hidden gems, we provide a
-          seamless and enriching journey from start to finish."
+          Ethiopia&apos;s vibrant history, diverse traditions, and incredible
+          natural beauty. Whether you&apos;re seeking thrilling outdoor
+          experiences, cultural exploration, or a deep dive into Ethiopia&apos;s
+          hidden gems, we provide a seamless and enriching journey from start to
+          finish.&quot;
         </p>
       </motion.div>
     </div>

@@ -1,17 +1,14 @@
-import React from "react";
+import { InstagramLogoIcon } from "@radix-ui/react-icons";
+import { LinkedinIcon } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import { Button } from "../ui/button";
-import Link from "next/link";
-import { LinkedinIcon } from "lucide-react";
-import { InstagramLogoIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
 
 interface Props {
   name: string;
