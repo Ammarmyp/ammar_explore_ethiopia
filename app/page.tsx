@@ -10,11 +10,19 @@ import TeamsSection from "./layout/TeamsSection";
 export default function Home() {
   return (
     <>
-      <Banner />
+      <Banner
+        image={"banner1.jpg"}
+        heading={"EXPLORE ETHIOPIA"}
+        subHeading={"Lets show you the orgin of  man kind"}
+      />
       <CompassQoute />
       <LocationSection />
       <OurService />
       <TeamsSection />
+      <Banner
+        image={"coffe.jpg"}
+        heading={`"Unlock Incredible Savings – and lets discuss your Adventure!"`}
+      />
     </>
   );
 }
