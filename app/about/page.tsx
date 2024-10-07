@@ -5,7 +5,8 @@ import CompassQoute from "../layout/CompassQoute";
 import LocationSection from "../layout/LocationsSection";
 import OurService from "../layout/Ourservice";
 import TeamsSection from "../layout/TeamsSection";
-import AboutPageMotto from "@/components/custom/AboutPageMotto";
+import AboutPageMotto from "@/app/about/_components/AboutPageMotto";
+import EssaySection from "./_components/EssaySection";
 
 const AboutPage = () => {
   return (
@@ -16,6 +17,7 @@ const AboutPage = () => {
         subHeading={"The agency for you and you alone"}
       />
       <AboutPageMotto />
+      <EssaySection />
       <TeamsSection />
       <Banner
         image={"artimage.jpg"}
