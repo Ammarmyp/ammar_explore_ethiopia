@@ -11,7 +11,7 @@ const TeamsSection = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateX = useTransform(cardScroll, [0, 1], [50, -50]);
+  const translateY = useTransform(cardScroll, [0, 1], [30, -30]);
   return (
     <div
       className="flex flex-col items-center justify-center px-8 md:px-14 lg:px-[140px] py-6 md:py-[60px] w-full"
@@ -21,7 +21,7 @@ const TeamsSection = () => {
         <motion.h2
           className="text-2xl font-extrabold tracking-tighter sm:text-4xl md:text-5xl text-secondary uppercase"
           style={{
-            translateX,
+            translateY,
           }}
         >
           start your journey with <br />
