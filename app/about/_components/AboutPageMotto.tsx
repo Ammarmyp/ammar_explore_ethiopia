@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutPageMotto = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-8 md:px-[140px] py-6 md:py-[60px]">
+    <div className="flex flex-col items-center justify-center px-8 md:px-[140px] py-3 md:py-[30px]">
       <div className="space-y-8 text-center lg:px-14">
         <span className="uppercase text-xs md:text-sm text-primary">
           we are waiting for you

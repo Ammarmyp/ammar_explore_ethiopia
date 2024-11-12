@@ -13,7 +13,7 @@ const AboutPage = () => {
       />
       <AboutPageMotto />
       <EssaySection />
-      <CoreTeams />
+      {/* <CoreTeams /> */}
       <Banner
         image={"artimage.jpg"}
         heading={`"Journey with Us – Meet the Explorers Who Make Your Adventures Unforgettable!"`}

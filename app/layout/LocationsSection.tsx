@@ -15,7 +15,7 @@ const LocationSection = () => {
     <div className="mb-[80px] ">
       <div className="relative">
         <Carousel className="w-[90%] max-w-full m-auto pt-10  ">
-          <CarouselContent className="-ml-1 gap-2">
+          <CarouselContent className="sm:-ml-1 gap-2">
             {data.map(({ title, image }, index) => (
               <CarouselItem
                 key={index}

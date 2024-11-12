@@ -9,15 +9,15 @@ const EssaySection = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateY = useTransform(cardScroll, [0, 1], [-150, 150]);
-  const translateY2 = useTransform(cardScroll, [0, 1], [100, -100]);
+  const translateY = useTransform(cardScroll, [0, 1], [-100, 100]);
+  const translateY2 = useTransform(cardScroll, [0, 1], [30, -30]);
   return (
     <div
-      className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 py-28 px-6 md:px-10 lg:px-48 w-full"
+      className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 py-10 md:py-28 px-6 md:px-10 lg:px-48 w-full"
       ref={ref}
     >
       <motion.div
-        className="md:w-1/2 flex justify-center"
+        className="md:w-1/2 flex justify-center mb-8 md:mb-0"
         style={{
           translateY: translateY2,
         }}
